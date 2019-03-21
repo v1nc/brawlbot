@@ -1,0 +1,4 @@
+numpy
+colormath
+urllib2
+opencv-python
