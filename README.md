@@ -1,5 +1,4 @@
 # brawlbot
-- python2.7
 - pip2.7 install -r requirements.txt
 - install android sdk and add '/Android/Sdk/tools/bin' to $PATH(or change path in MonkeyWrapper)
 - install [app](https://play.google.com/store/apps/details?id=info.dvkr.screenstream) to stream screen over http
