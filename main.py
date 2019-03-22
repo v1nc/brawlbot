@@ -11,10 +11,14 @@ def sprint(message):#print the same line so terminal doesnt get spammed
 #normal delay in same network should be <1s!
 #but bigger drop_rate => lower fps.
 #i think drop_rate 5 could be acceptable for production, i get 1-2 fps with drop_rate 5
+
+#!!
+#pixel loop runs the whole time. dont start before ingame until pixel loop checks for ingame start!
+#!!
 drop_rate = 5
 #monkey_wrapper = MonkeyWrapper()# not used by now
-save_screen = False#save screenshots to 'screen_capture'
-show_screen = True#show screen in a window
+save_screen = False #save screenshots to 'screen_capture'
+show_screen = True #show screen in a window
 screen_wrapper = ScreenWrapper('http://192.168.178.163:8080/stream.mjpeg',drop_rate,save_screen,show_screen)
 succ = True
 while succ:
